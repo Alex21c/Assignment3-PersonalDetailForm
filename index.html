@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 3 - Personal Detail Form">
+    <meta name="keywords" content="Assignment, Geekster, html5 forms">
+    <meta name="author" content="Abhishek kumar">        
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <title>Assignment 3 - Personal Detail Form</title>  
+    <style>
+      .hidden{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>        
+    <main>
+      <h1 class="hidden">Assignment 3 - Personal Detail Form</h1>
+      <span>Personal details:</span>
+      <form action="index.html" method="get">
+        <label>Salutation<br>
+          <select name="salutation">
+            <option value="None">--None--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+          </select>
+        </label><br><br>
+        <label>First Name: <input type="text" placeholder="abcd"></label><br><br>
+        <label>Last Name: <input type="text" placeholder="abcd"></label><br><br>
+        <span>Gender:
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </span><br><br>
+        <label>Email: <input type="email" name="email" value="abc@gmail.com"></label><br><br>
+        <label>Date of Birth: <input type="date" name="dateOfBirth"></label><br><br>
+        <label>Address:<br><textarea name="address" cols="30" rows="5"></textarea></label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>
